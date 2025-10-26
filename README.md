@@ -29,7 +29,7 @@ It’s not just another chatbot.  It’s an agent that plans ahead, verifies its
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/virattt/dexter.git
+git clone https://github.com/slindleagent/slindle.git
 cd dexter
 ```
 
@@ -50,9 +50,9 @@ cp env.example .env
 
 ### Usage
 
-Run Dexter in interactive mode:
+Run slindle in interactive mode:
 ```bash
-uv run dexter-agent
+uv run slindle-agent
 ```
 
 ### Example Queries
@@ -81,9 +81,9 @@ Dexter uses a multi-agent architecture with specialized components:
 ## Project Structure
 
 ```
-dexter/
+slindle/
 ├── src/
-│   ├── dexter/
+│   ├── slindle/
 │   │   ├── agent.py      # Main agent orchestration logic
 │   │   ├── model.py      # LLM interface
 │   │   ├── tools.py      # Financial data tools
@@ -97,10 +97,10 @@ dexter/
 
 ## Configuration
 
-Dexter supports configuration via the `Agent` class initialization:
+Slindle supports configuration via the `Agent` class initialization:
 
 ```python
-from dexter.agent import Agent
+from slindle.agent import Agent
 
 agent = Agent(
     max_steps=20,              # Global safety limit
@@ -119,7 +119,4 @@ agent = Agent(
 **Important**: Please keep your pull requests small and focused.  This will make it easier to review and merge.
 
 
-## License
-
-This project is licensed under the MIT License.
 
