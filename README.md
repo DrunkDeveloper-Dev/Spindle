@@ -21,7 +21,7 @@ It’s not just another chatbot.  It’s an agent that plans ahead, verifies its
 ### Prerequisites
 
 - Python 3.10 or higher
-- [uv](https://github.com/astral-sh/uv) package manager
+- [uv](https://github.com/slindle-sh/uv) package manager
 - OpenAI API key (get [here](https://platform.openai.com/api-keys))
 - Financial Datasets API key (get [here](https://financialdatasets.ai))
 
@@ -30,7 +30,7 @@ It’s not just another chatbot.  It’s an agent that plans ahead, verifies its
 1. Clone the repository:
 ```bash
 git clone https://github.com/slindleagent/slindle.git
-cd dexter
+cd slindle
 ```
 
 2. Install dependencies with uv:
@@ -57,13 +57,13 @@ uv run slindle-agent
 
 ### Example Queries
 
-Try asking Dexter questions like:
+Try asking Slindle questions like:
 - "What was Apple's revenue growth over the last 4 quarters?"
 - "Compare Microsoft and Google's operating margins for 2023"
 - "Analyze Tesla's cash flow trends over the past year"
 - "What is Amazon's debt-to-equity ratio based on recent financials?"
 
-Dexter will automatically:
+Slindle will automatically:
 1. Break down your question into research tasks
 2. Fetch the necessary financial data
 3. Perform calculations and analysis
@@ -71,7 +71,7 @@ Dexter will automatically:
 
 ## Architecture
 
-Dexter uses a multi-agent architecture with specialized components:
+Slindle uses a multi-agent architecture with specialized components:
 
 - **Planning Agent**: Analyzes queries and creates structured task lists
 - **Action Agent**: Selects appropriate tools and executes research steps
